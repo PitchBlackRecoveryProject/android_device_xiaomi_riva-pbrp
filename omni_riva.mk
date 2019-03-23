@@ -25,4 +25,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Allow missing dependenciea
 ALLOW_MISSING_DEPENDENCIES=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8937
+
 PRODUCT_NAME := omni_riva
