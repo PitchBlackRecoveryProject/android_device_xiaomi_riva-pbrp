@@ -14,15 +14,19 @@
 # limitations under the License.
 #
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/omni/config/gsm.mk)
+PRODUCT_RELEASE_NAME := riva
 
-$(call inherit-product, device/xiaomi/riva/full_riva.mk)
+$(call inherit-product, build/target/product/embedded.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common pb stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
-# Allow missing dependenciea
-ALLOW_MISSING_DEPENDENCIES=true
-
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := riva
 PRODUCT_NAME := omni_riva
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Xiaomi Redmi 5A
+PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8937
