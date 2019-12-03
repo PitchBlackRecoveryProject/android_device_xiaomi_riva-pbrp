@@ -27,6 +27,7 @@
 
 on fs
     # Needed to make qseecomd work in recovery
+    export ANDROID_ROOT /system_root
     chmod 0777 /dev/qseecom
     chmod 0664 /dev/ion
     chown system system /dev/ion
