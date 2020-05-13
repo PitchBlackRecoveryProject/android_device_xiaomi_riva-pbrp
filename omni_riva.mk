@@ -23,10 +23,11 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := riva
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8937
+
 PRODUCT_NAME := omni_riva
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Xiaomi Redmi 5A
 PRODUCT_MANUFACTURER := Xiaomi
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.hardware.keystore=msm8937
