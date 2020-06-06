@@ -14,6 +14,7 @@ jobs:
       # TEST_BUILD: 'true'
       # Only for Official Build, uncomment following
       PB_OFFICIAL: 'true'
+      MAINTAINER: '@ErwinAbs'
     working_directory: /home/builder/pitchblack
     steps:
       - run:
