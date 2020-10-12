@@ -96,3 +96,6 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+
+# TORCH
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
