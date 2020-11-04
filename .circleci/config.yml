@@ -11,10 +11,14 @@ jobs:
       CODENAME: 'riva'
       BUILD_LUNCH: 'omni_riva-eng'
       # Remove the following when Publishing Official
-      TEST_BUILD: 'true'
+      # TEST_BUILD: 'true'
       # Only for Official Build, uncomment following
-      # PB_OFFICIAL: 'true'
+      PB_OFFICIAL: 'true'
       MAINTAINER: '@ErwinAbs'
+      CHANGELOG: |
+        - Update Kernel 4.9
+        - Add bash & Nano Editor
+        - Fix for goodix user
     working_directory: /home/builder/pitchblack
     steps:
       - run:
