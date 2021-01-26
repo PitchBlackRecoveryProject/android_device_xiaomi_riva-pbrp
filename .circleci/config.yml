@@ -16,9 +16,13 @@ jobs:
       PB_OFFICIAL: 'true'
       MAINTAINER: '@ErwinAbs'
       CHANGELOG: |
-        - Update Kernel 4.9
-        - Add bash & Nano Editor
-        - Fix for goodix user
+        - Update based 3.5.0
+        - Improve translate
+        - Added support terminal from file manager
+        - Nuked SuperSU
+        - Update lock pattern types for android 11
+        - Fixed Codename Changer
+        - Misc
     working_directory: /home/builder/pitchblack
     steps:
       - run:
