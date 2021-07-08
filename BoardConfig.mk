@@ -89,6 +89,8 @@ TW_FORCE_USE_BUSYBOX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 PB_DISABLE_DEFAULT_DM_VERITY := true
 TW_INCLUDE_RESETPROP := true
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
 # Disable Mouse Cursor
 TW_INPUT_BLACKLIST := "hbtp_vm"
