@@ -86,7 +86,7 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_FORCE_USE_BUSYBOX := true
 #RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-PB_TORCH_PATH := "/sys/class/leds/mmc0::"
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
 
 # Disable Mouse Cursor
 TW_INPUT_BLACKLIST := "hbtp_vm"
